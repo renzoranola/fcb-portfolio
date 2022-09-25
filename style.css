@@ -1,0 +1,77 @@
+/* Syntax for CSS Styling
+    Selector {
+        property: value;
+    }
+
+    In CSS we have the Specifity rule
+    - #id -Highest Priority
+    - element/<tag>
+    - .class
+    - universal(*) - Lowest Priority
+*/
+
+/* Universal Selector(*) - Selects all HTML element */
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* tag/element selector(<tagName>) */
+
+h1, h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+/* Id selector (#idName) -used the id attribute to select an element. */
+
+#landing {
+    /* vh= viewport height */
+    height: 100vh;
+    /* center the content vertically using flexbox */
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class selector (.className) -Select all elements that belongs to a particular class attribute. */
+.jumbotron {
+    background-color: transparent;
+}
+
+#gallery {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.tools {
+    color: white;
+    height: 200px;
+    width: 75%;
+    border: 5px solid #f2f2f2;
+    margin: 20px;
+    padding: 25px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
